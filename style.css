@@ -1,8 +1,9 @@
 :root {
   --cor-primaria: rgb(255, 181, 166);
-  --cor-secundaria: rgb(137, 197, 162);
+  --cor-secundaria: rgb(102, 126, 104);
   --cor-terciaria: rgb(0, 60, 57);
-  --cor-quartenaria: rgb(255, 255, 255);
+  --cor-quartenaria: rgb(153, 165, 149);
+  --cor-quinquenario: rgb(246, 233, 214);
   --cor-opacidade: rgba(137, 197, 162, 0.1);
 }
 
@@ -21,7 +22,7 @@ body {
   align-items: center;
   justify-content: center;
 
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto Serif', serif;
 }
 
 .container-grid {
@@ -29,8 +30,8 @@ body {
   width: 450px;
   height: 450px;
   background: rgba(137, 197, 162, 0.1);
-  backdrop-filter: blur(30px);
-  border-radius: 10px;
+  backdrop-filter: blur(20px);
+  border-radius: 16px;
 }
 
 .container-logo {
@@ -69,6 +70,7 @@ body {
   outline: none;
   border-radius: 4px;
 
+  cursor: pointer;
   margin: 0 auto;
 }
 
@@ -76,5 +78,6 @@ body {
   color: var(--cor-terciaria);
   background-color: var(--cor-primaria);
 
+  cursor: pointer;
   transition: 0.4s;
 }

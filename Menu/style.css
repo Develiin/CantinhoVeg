@@ -1,3 +1,13 @@
+:root {
+  --cor-primaria: rgb(255, 181, 166);
+  --cor-secundaria: rgb(102, 126, 104);
+  --cor-terciaria: rgb(0, 60, 57);
+  --cor-quartenaria: rgb(153, 165, 149);
+  --cor-quinquenario: rgb(246, 233, 214);
+  --cor-opacidade: rgba(137, 197, 162, 0.1);
+  --cor-sexenario: rgb(228, 181, 114);
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -5,14 +15,27 @@
 }
 
 body {
+  height: 100vh;
+  padding: 15px;
   font-family: 'Roboto', sans-serif;
-}
 
-.fundo {
   background-image: url(../assets/img/pratos-salada.jpg);
+  background-position: center top;
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+}
+
+.container {
+  max-width: 400px;
+  background: rgba(137, 197, 162, 0.1);
+  border-radius: 16px;
+  backdrop-filter: blur(30px);
+  border: 1px solid rgba(137, 197, 162, 0.1);
+}
+
+.container {
+  margin-left: 475px;
 }
 
 ul {
@@ -24,43 +47,37 @@ h2,
 h3,
 .preço {
   font-family: 'Roboto Serif', serif;
-
   text-transform: uppercase;
-
-  color: #2d2c2a;
+  color: var(--cor-terciaria);
 }
 
 header {
   text-align: center;
-
   padding: 32px 0;
 }
 
 header,
 section {
   max-width: 300px;
-
   margin: 0 auto;
 }
 
 header h1 {
   margin-bottom: 4px;
-
   font-size: 28px;
-
   line-height: 33px;
+  color: var(--cor-quinquenario);
 }
 
 header h1 span {
-  color: #995000;
+  color: var(--cor-terciaria);
 }
 
 header p {
   font-size: 14px;
-
   line-height: 16px;
-
-  color: rgba(0, 0, 0, 0.7);
+  /* color: rgba(0, 0, 0, 0.7); */
+  color: var(--cor-terciaria);
 }
 
 section {
@@ -68,20 +85,15 @@ section {
 }
 
 section h2 {
-  background-color: #fed7aa;
-
+  background-color: var(--cor-quinquenario);
   padding: 8px 16px;
-
   text-align: center;
-
   margin-bottom: 24px;
-
   font-size: 18px;
 }
 
 ul li {
   margin-bottom: 16px;
-
   display: flex;
 }
 
@@ -91,16 +103,38 @@ li .detalhes {
 
 .detalhes h3 {
   margin-bottom: 8px;
-
   font-size: 16px;
-
   line-height: 19px;
 }
 
 .detalhes p {
-  color: rgba(15, 90, 45, 0.6);
-
+  color: var(--cor-terciaria);
   font-size: 14px;
-
   line-height: 21px;
+}
+
+footer {
+  text-align: left;
+  color: var(--cor-terciaria);
+}
+
+footer p {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon {
+  text-align: center;
+  margin-left: 0.5rem;
+  background-color: var(--cor-terciaria);
+  border-radius: 20px;
+  padding: 0.3rem;
 }
